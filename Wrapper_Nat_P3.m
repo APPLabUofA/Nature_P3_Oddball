@@ -19,8 +19,8 @@ exp.pathname = 'M:\Data\Nature_P3\eeg';
 % Each column is a different event.
 % You can collect multiple triggers into one event with square brackets [].
 
-triggers = 1; %%1 for auditory tones; 2 for visual scenes
-preprocessing = 0; %%%1 to only run preprocessing, 0 to only run analysis
+triggers = 2; %%1 for auditory tones; 2 for visual scenes
+preprocessing = 1; %%%1 to only run preprocessing, 0 to only run analysis
 
 if triggers == 1
     %%%%%Triggers to tone onset%%%%%

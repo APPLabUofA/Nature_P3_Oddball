@@ -49,15 +49,15 @@ try
             allevents = length(EEG.event);
             
             for i_event = 2:allevents %skip the first
-                %                 if strcmp(EEG.event(i_event).type,'S 99') == 1
-                %                     EEG.event(i_event).type = num2str(str2num(EEG.event(i_event).type(3:end)));
-                %                     disp(EEG.event(i_event).type);
-                %                 else
-                if strcmp(EEG.event(i_event).type,'S 99') == 1
-                    EEG.event(i_event).type = 'S999';
-                end
-                EEG.event(i_event).type = num2str(str2num(EEG.event(i_event).type(2:end)));
-                %                 end
+%                 if strcmp(EEG.event(i_event).type,'S 99') == 1
+%                     EEG.event(i_event).type = num2str(str2num(EEG.event(i_event).type(3:end)));
+%                     disp(EEG.event(i_event).type);
+%                 else
+                                    if strcmp(EEG.event(i_event).type,'S 99') == 1
+                                        EEG.event(i_event).type = 'S999';
+                                    end
+                    EEG.event(i_event).type = num2str(str2num(EEG.event(i_event).type(2:end)));
+%                 end
             end
             
             %% The triggers are early
